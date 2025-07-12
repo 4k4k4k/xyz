@@ -601,7 +601,7 @@
 
   <script>
     // Configuration
-    const BANKDATA_API_URL = 'YOUR_APPS_SCRIPT_URL_HERE'; // Replace with your Apps Script Web App URL
+    const BANKDATA_API_URL = 'https://script.google.com/macros/s/AKfycbzMaiA39g_VTy-ABep9ADTLc94R9TkiTrK4tFCi6dx6sp0v0kWy4WCZQeSTUDYytri4/exec'; // Replace with your Apps Script Web App URL
     const LEADS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxGaJkE_gzzi00J-3PtunwIePM5_nwpcq3bePlIxEF3ixFRV2I9F5NSbxY7rNFEd52Q/exec';
     
     let bankData = [];
@@ -626,7 +626,7 @@
       dataLoaded = false;
       
       // Check if API URL is configured
-      if (BANKDATA_API_URL && BANKDATA_API_URL !== 'https://script.google.com/macros/s/AKfycbx-WMc_QFddCLmJGcZ32gM6UJWYFU3lNHyAnxV9MXy89carslgmLQwWIVOJlJhGu7_N/exec') {
+      if (BANKDATA_API_URL && BANKDATA_API_URL !== 'https://script.google.com/macros/s/AKfycbzMaiA39g_VTy-ABep9ADTLc94R9TkiTrK4tFCi6dx6sp0v0kWy4WCZQeSTUDYytri4/exec') {
         // No cache headers needed - Apps Script always returns fresh data
         fetch(BANKDATA_API_URL)
           .then(response => {
