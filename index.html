@@ -943,7 +943,18 @@
         timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
         name: name,
         email: email,
-        phone: phone
+        phone: phone,
+        creditScore: calculationData.creditScore || '',
+        loanAmount: calculationData.loanAmount || '',
+        currentROI: calculationData.currentROI || '',
+        tenure: calculationData.tenure || '',
+        khataType: calculationData.KHATAType || '',
+        bankCategory: calculationData.bankCategory || '',
+        bestBank: calculationData.bestBank || '',
+        bestROI: calculationData.bestROI || '',
+        monthlySavings: calculationData.monthlySavings ? Math.round(calculationData.monthlySavings) : '',
+        totalSavings: calculationData.totalSavings ? Math.round(calculationData.totalSavings) : ''
+
       };
 
       // Show loading
